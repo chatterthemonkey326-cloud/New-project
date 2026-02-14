@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Button That Evolves</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Favicon: place the site image at assets/user-images/favicon.png -->
+    <link rel="icon" type="image/png" href="assets/user-images/Proyecto nuevo.jpg">
+    <link rel="shortcut icon" href="assets/user-images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/user-images/favicon.png">
+  </head>
+  <body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div id="noise" aria-hidden="true"></div>
+    <main id="game" class="stage-1">
+      <div id="parallax-layer" aria-hidden="true"></div>
+      <section id="world"></section>
+      <section id="ui-layer">
+        <div id="messages" aria-live="polite"></div>
+        <div id="windows"></div>
+        <div id="puzzle"></div>
+      </section>
+      <div id="haunt-layer" aria-hidden="true"></div>
+      <button id="main-button" class="evolve-btn">Click Me</button>
+      <button id="rickroll-button" type="button" aria-label="secret corner button"></button>
+      <div id="entity" class="hidden" aria-hidden="true">
+        <div class="entity-core"></div>
+        <div class="entity-ring"></div>
+      </div>
+      <div id="overlay" class="hidden">
+        <div id="overlay-content"></div>
+      </div>
+    </main>
+    <div id="crt-overlay" aria-hidden="true"></div>
+    <div id="scanlines" aria-hidden="true"></div>
+    <div id="vhs-static" aria-hidden="true"></div>
+    <div id="tracking-bar" aria-hidden="true"></div>
+    <div id="pixel-cursor" class="hidden" aria-hidden="true">
+      <span class="pc-shadow"></span>
+      <span class="pc-core"></span>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
